@@ -1,0 +1,41 @@
+{
+  "name": "svn-tool",
+  "version": "0.1.0",
+  "description": "Stable async SVN toolkit and CLI for large Unity resource projects.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./config/example": "./dist/config/svn.config.example.json"
+  },
+  "bin": {
+    "svn-tool": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && node scripts/copy-assets.mjs",
+    "prepack": "npm run build",
+    "pack:dry": "npm pack --dry-run",
+    "svn": "tsx src/cli.ts",
+    "start": "tsx src/cli.ts",
+    "test": "vitest --run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

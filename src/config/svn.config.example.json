@@ -1,0 +1,26 @@
+{
+  "svnExecutable": "",
+  "projects": [
+    {
+      "name": "HotUpdateAssets",
+      "repoUrl": "https://svn.xxx.com/project/hotupdate/trunk",
+      "localPath": {
+        "win32": "D:/GameProject/HotUpdateAssets",
+        "darwin": "/Users/yourname/GameProject/HotUpdateAssets",
+        "linux": "/home/yourname/GameProject/HotUpdateAssets"
+      },
+      "ignoreExternals": false,
+      "noAuthCache": false,
+      "failOnLocalChanges": false
+    },
+    {
+      "name": "ClientProject",
+      "repoUrl": "https://svn.xxx.com/project/client/trunk",
+      "localPath": {
+        "win32": "D:/GameProject/Client",
+        "darwin": "/Users/yourname/GameProject/Client",
+        "linux": "/home/yourname/GameProject/Client"
+      }
+    }
+  ]
+}
