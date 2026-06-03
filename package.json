@@ -1,5 +1,5 @@
 {
-  "name": "svn-tool",
+  "name": "@sundy/svn-tool",
   "version": "0.1.0",
   "description": "Stable async SVN toolkit and CLI for large Unity resource projects.",
   "type": "module",
